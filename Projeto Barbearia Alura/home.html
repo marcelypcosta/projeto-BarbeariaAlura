@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Para indicar o encoding da página utiliza-se a tag <meta> com a propriedade charset-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Para ter acesso a um arquivo externo com este arquivo html usamos a tag <link> com as propriedades 'rel' e 'href'.-->
+    <link rel="stylesheet" href="style_home.css">
+    <!--Para indicar o nome da página utiliza-se a tag <tittle>-->
+    <title>Barbearia Alura</title>
+</head>
+<body>
+    <!--Para indicar que vamos fazer o cabeçalho da página é utilizado a tag <header>-->
+    <header>
+        <h1 class="titulo_principal">Barbearia Alura</h1>
+    </header>
+    <!--Para adicionar uma imagem a ser usada utiliza-se a tag <img> com as propriedade src(adicionar o arquivo da imagem)-->
+    <img src="imagens_home/banner.jpg" id="banner">
+    <!--Para dividir os conteúdos da página basta usar a tag <div>. Para melhor manipulação.-->
+    <div class="principal">
+        <!--Titulos de páginas são definidos pela tag <h> e possui até 6 níveis de importância (<h1>...<h6>)-->
+        <h2 class="titulo_centralizado">Sobre a Barbearia Alura</h2> 
+        <!--Parágrafos são definidos pela tag <p>-->
+        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> 
+        <!--As tags que dão ênfase a algum trecho do texto são <strong> ou <b>, deixando o texto em negrito. E a tag <em> ou <i>, deixando o texto em itálico-->
+        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+    </div>
+    <!--As principais propriedades da <div> é o 'id' para idetificação única e o 'class' que é a identificação de um grupo-->
+    <div class="beneficios">
+        <h3 class="titulo_centralizado">Benefícios</h3>
+        <!--Para criar de listas é utilizado a tag <ul>, para lista não ordenadas.-->
+        <ul>
+            <!--Para indicar os itens da lista é usado a tag <li> para cada item.-->
+            <li class="itens">Atendimento aos Clientes</li>
+            <li class="itens">Espaço diferenciado</li>
+            <li class="itens">Localização</li>
+            <li class="itens">Profissionais Qualificados</li>
+        </ul>
+        <img src="imagens_home/beneficios.jpg" class="imagem_beneficios">
+    </div>
+</body>
+</html>

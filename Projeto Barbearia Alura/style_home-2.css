@@ -1,0 +1,156 @@
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* medida 'em' é a medida proporcional para pixel. Com isso, '2em' que dizer que o dobro da fonte base da página*/
+    margin: 0 0 1em;
+    clear: left; /*Limpar o lado esquedo*/
+    /*color: rgba(0,0,0, 0.3); Como a opacidade ocorre da camda alfa para usar a opacidade nos elemento utilza-se o 'rgba(-,-,-,quanto de opacidade)'*/
+    /*text-shadow sombra no texto*/
+}
+
+/*
+- Deixar a primeira letra em negrito
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+-Adicionar o conteúdo "[" antes do conteúdo do html
+.titulo-principal::before{
+    content: "[ "; 
+}
+
+- // depois do contéudo do html
+.titulo-principal::after{
+    content: " ]";
+}
+
+- Deixar a primeira linha dos parágrafos em itálico
+p::first-line{
+    font-style: italic;
+}*/
+
+.principal p{
+    margin: 0 0 1em; /*A margem vai ter o mesmo tamanho que o parágrafo ocupa na linha de cima*/
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#ffffff, #888888); /*Background em degradê linearmente. Existe em circulos que é radial-gradient*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+    margin: 0 auto;
+    /*box-shadow: inset 0 0 30px #ff0000; Adição de um uma sombra inset = interna do centro da imagem com um blur de 30px da cor vermelha*/
+}
+
+.conteudo-mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5; /*Altura da linha*/
+}
+
+.itens:first-child{ /*Pseudo-elemento usada pra mudar a primeiro criança de uma lista de classes. Para o ultimo é 'lest-child' e qualquer elemento é 'nth-child(posição do elemento)' e elementos de tanto em tanto é 'nth-child(posição'n')' */
+    font-weight: bold;
+}
+
+.itens::before{
+    content: "⚹";
+}
+
+.imagem_beneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 400ms; /*Mile segundos = ms*/
+    box-shadow: 10px 10px 10px 0 #000000;/*Sombra: valor do eixo x - valor do eixo y - valor da intesidade do blur - valor da expansão - a cor*/
+}
+
+.imagem_beneficios:hover{
+    opacity: 0.3; /*Opacidade é possível usar em todos os elementos, cores, imagens,...*/
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+/*main > p{  ->  O > indica o primeiro filho
+    background: green;
+}
+
+img + p{  ->  O + indica o irmão do primero filho
+    background: blue;
+}
+
+img ~ p{  -> O ~ indica odos os irmão do primeiro filho
+    background: yellow;
+}
+
+.principal p:not(#missao){ O :not(nome da class/id) indica 'que não seja...'
+    background: orange
+}*/
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .conteudo-mapa, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .principal, .mapa, .beneficios{
+        padding: 48px;
+    }
+    .imagem_beneficios{
+        margin-top: 2em;
+    }
+    .lista-beneficios, .imagem_beneficios{
+        width: 100%;
+    }
+}
+

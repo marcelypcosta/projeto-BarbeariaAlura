@@ -1,0 +1,69 @@
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos img{
+    width: 100%;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box; /*Fixar a largura e assim na utilização do tamanho em px nao alterar nada*/
+    vertical-align: top; /*Colocando o alinhamento pelo topo e nao pelo bottom que é o que acontece automaticamente*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    border: #000000 2px solid;
+    border-radius: 10px; /*Arredondar os vertices da borda*/
+}
+
+.produtos li:hover{  /*os elemento de li ao passar o mouse mude seu comportamento*/
+    border-color: #c78c19;
+    cursor: pointer;
+}
+
+.produtos li:active{ /*os elementos de li ao cliclar com o mouse mude seu comportamente*/
+    border-color:  #088C19;
+}
+
+.produtos li:hover h2{ /* o h2 ao passar o mouse mude seu comportamento*/
+    font-size: 35px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 18px;
+}
+
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .produtos, footer{
+        width: auto;
+    }
+    .produtos li{
+        display: block;
+        width: 50%;
+        margin: 50px auto;
+    }
+    .produtos li:active{
+        border-color: #c78c19;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+}

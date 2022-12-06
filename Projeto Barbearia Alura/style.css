@@ -1,0 +1,61 @@
+body{
+    font-family: 'Montserrat', sans-serif; /*Usando uma fonte*/
+}
+
+header{
+    background: #bbbbbb;
+    padding: 20px 0px
+}
+
+.caixa{
+    position: relative; /*Determinar a posição do elemento, tomando como base seu ponto inicial que foi determinado*/
+    width: 940px; /*Largura padrão, pois na maioria das vezes as boas resoluções são de 1000px*/
+    margin: 0 auto; /*Quando criamos uma div ja sua posição inicial é ao lado direito da página, com isso, automaticamente é criado uma margin na direita, caso o tamanho da div não seja 100%. A partir disso, para centralizar essa div basta colocar o auto.*/
+}
+
+nav{
+    position: absolute; /*Determinar a posição do elemento, tomando como base o navegador*/
+    top: 125px; 
+    right: 0;
+}
+
+nav li{
+    display: inline; /*Para manipular o texto é usado o display. Todo elemento é em block, ou seja, ocupa todo o espaço da linha que ele foi colocado, por isso todo elemento que for digitado na sequência ira para baixo.Com isso, para mudar utiliza-se o inline*/
+    margin: 0 0 0 30px;
+}
+
+nav a{
+    text-transform: uppercase; /*Transformação do estilo do texto*/
+    font-weight: bold; /*"Peso" da fonte do texto*/
+    font-size: 22px;
+    text-decoration: none; /*Decoração do texto, no caso do link é a linha. Para retirar utiliza-se none*/
+    color: #000000;
+}
+
+nav a:hover{
+    color: #c78c19; /*Cor ao passar o mouse no link*/
+    text-decoration: underline; /* Adicionar decoração ao passar o mouse*/
+}
+
+
+footer{
+    text-align: center;
+    background-image: url(imagens_produtos/bg.jpg); /*Adicionar uma imagem como fundo*/
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px;
+    
+}
+
+@media screen and (max-width: 480px) {
+    nav li:first-child{
+        margin-left: 15px;
+    }
+    
+    nav li:last-child{
+        margin-right: 15px;
+    }
+}

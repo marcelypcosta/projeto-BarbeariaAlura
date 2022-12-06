@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_contatos.css">
+    <title>Contato - Barbearia Alura</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="imagens_produtos/logo.png" alt="Logo da Barbearia Alura"></h1>
+        <nav>
+            <ul>
+                <li><a href="home-2.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <form action=""> <!--Criando um formulário-->
+            <label for="nomesobrenome">Nome completo</label> <!--Titulo do input-->
+            <input requireed class="input_padrao" type="text" name="NomeeSobrenome" id="nomesobrenome" placeholder="Digite seu nome completo">
+            <!--Input é usado para receber informação do usuário. Temos com suas propriedades usadas o:
+            - required: torna o campo obrigatório
+            - type: o tipo de recebimendo
+            - placeholder: texto que fica enquanto não nada digitado para melhor entendimento do usuário-->
+            <label for="email">Email</label>
+            <input requireed  class="input_padrao" type="email" name="Email" id="email" placeholder="seuemail@dominio.com">
+            <label for="telefone">Telefone</label>
+            <input requireed class="input_padrao" type="text" name="Telefone" id="telefone" placeholder="(XX) XXXXX - XXXX">
+            <!--propriedades como:
+            - required
+            - cols: número de colunas, determinando o tamanho da caixa de texto
+            - rows: número de linha, também determinando o tamanho-->
+
+            <fieldset> <!--É a 'div' do formulário-->
+                <!--<p class="test" id="test" style="color: purple;">Teste</p>-->
+                <legend>Como prefere nosso contato?</legend><!--Titulo dp fieldset-->
+                <label for="radio_email"><input type="radio" name="Escolha de Contato" value="Email" id="radio_email">Email</label> <!--O input é um elemento inline, ou seja, tudo em sequência também sendo inline ou estando em inline ficará ao seu lado por isso foi colocado dentro de label-->
+                <label for="radio_telefone"><input type="radio" name="Escolha de Contato" value="Telefone" id="radio_telefone">Telefone</label>
+                <label for="radio_whatsapp"><input type="radio" name="Escolha de Contato" value="Whatsapp" id="radio_whatsapp" checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select> <!--Criação de seleção de opções-->
+                    <option value="manhã">Manhã</option><!--As opções do select-->
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber novidades pro email?</label>
+
+            <input type="submit" value="Enviar Formulário" class="enviar"> <!--Input de envio-->
+
+        </form>
+
+        <table> <!--Tabela-->
+            <thead> <!--Cabeçalho da tabela-->
+                <tr> <!--linhas-->
+                    <th>Dia</th> <!--células do head da tabela-->
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody> <!--COnteúdo da tabela-->
+                <tr>
+                    <td>Segunda</td> <!--células do body-->
+                    <td>8h às 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h às 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h às 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imagens_produtos/logo-branco.png" alt="Logo da Barbearia Alura">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
+</html>

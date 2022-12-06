@@ -1,0 +1,115 @@
+AULA 01: Marcação do primeiro texto
+
+Uma introdução ao HTML e às suas tags:
+
+- A definição de título no HTML é atráves da tag <h>, onde esse 'h' possui um número acompa-
+nhando de 1 à 6, onde o número refere-se a prioridade na página web. Ou seja, <h1> você uti-
+liza quando for para o texto principal daquela parte e assim por diante.
+
+- E a definição de parágrafos no HTML é a tag <p>.
+
+- No HTML a palavra em negrito é para o algoritmo identificar aquilo que tem mais ênfase e 
+para deixá-lo assim é usado a tag <b> ou <strong>. Mas, o mais ideal é o <strong> pois o <b> 
+só deixa em negrito e <strong> deixa e da ênfase.
+
+- Já para mudar o estilo da palavra para itálico utiliza-se o <em>.
+
+obs.: dar estilo as coisas é mais ideal atráves do CSS.
+
+
+AULA 02: Separando conteúdo e informações
+
+Estrutura básica do HTML: (atalho: esclamação '!' + enter)
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+- A tag DOCTYPE, defini a versão 5 do HTML.
+
+- A tag <html> marca o conteúdo a ser renderizado no navegador:
+	- Dentro desta tag, podemos definir a linguagem/idioma da página: através da proprie-
+	  dade 'lang';
+	- Para passar as informações do encoding da nossa página para o navegador: através da
+	  tag <meta> e da propriedade charset, ou seja, identificar as acentuações do português;	
+
+- Para definir o título de uma página: é através da tag <title>;
+
+- Para separar as informações que estão sendo passadas para o navegador: utiliza-se a tag 
+<head>;
+
+- Para separar o conteúdo da página: utiliza-se a tag <body>;
+
+
+AULA 03: Começando com CSS
+
+Apresentação dos textos:
+
+	- Alinhamento (text-align);
+	- Tamanho da fonte (font-size);
+	- Cor de fundo (background);
+	- Cor do texto (color);
+
+- CSS inline: estilização na própria linha de código do HTML com a tag <style>;
+ 
+- CSS externo: estilização atráves de um link externo de um css. E é adicionada no código
+HTML atráves de '<link rel="stylesheet" href="style.css">';
+
+- Funcionamento do estilo em cascata do CSS: 
+	- Tem que ser feito em 'cascata', ou seja, o código CSS é feito na mesma sequência no 
+	  HTML;
+
+- Representação de cores no CSS:
+	- Através do nome da cor (blue, yellow, green,...);
+	- Através do seu hexadecimal (#....... );
+	- Através do seu RGB (rgb(..., ..., ...). vai de 0 à 255);
+
+
+AULA 04: Estlizando imagens
+
+- Como criar um identificador para marcar especificamente um elemento;
+	- "class='nome'" serve para marcar itens, que são repetíveis; 
+	- "id='nome'" para um elemento receber um comportamento. 
+
+obs.: class é sempre bom usar para dar estilo no elemento e para dar um certo comportamento
+usar o id.
+
+- Para fazer referência a esse identificador no CSS;
+	- class é .nome ou id é #nome;
+
+- Para adicionar uma imagem à nossa página, é atráves da tag <img>;
+
+- Para ajustar a altura do elemento, é através da propriedade height;
+
+- Para ajustar a largura do elemento, é através da propriedade width;
+
+- Para ajustar o espaçamento interno do elemento, é através da propriedade padding;
+
+- Para ajustar o espaçamento externo do elemento, é através da propriedade margin;
+
+AULA 05: Lista e divisões de conteúdo
+
+- Para trabalhar com listas não-ordenadas e listas ordenadas é usada as tags, <ul> e <ol>,
+respectivamente. E para definir cada item da lista, utilizamos a tag <li>;
+
+- Divisões de conteúdo, utilizando a tag <div>;
+
+- Os comportamentos inline e block:
+	- Inline quer dizer que o elemento pode receber outro elemento em seguida na mesma linha;
+	- Block quer dizer que o elemento ocupa toda a linha msm não ocupando de fato a página toda;
+
+AULA 06: Finalizando a página
+
+- No novo HTML existe a tag <header> que indica o código referente ao cabeçalho; Criado para
+não ter tantas div na página e semântica fazer mais sentido.
+
+- Que o cabeçalho da página deve ter mais destaque;
