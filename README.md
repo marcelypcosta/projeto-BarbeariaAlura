@@ -1,2 +1,1 @@
-# Projeto-BarbeariaAlura
-Projeto feito com o objetivo de aprender mais sobre HTML e CSS
+<h1 align="center">Barbearia Alura</h1>
