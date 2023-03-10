@@ -22,6 +22,12 @@
   <img height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
 </div>
 
+<h3 id="linguagens">Demonstração do Projeto</h3>
+<hr>
+<div>
+    <video src="https://clipchamp.com/watch/8edDhMdLPac"/>
+</div>
+
 <h3 id="acesso">Acesso ao projeto</h3>
 <hr>
 <p>Você pode<a href="https://github.com/marcelypcosta/Projeto-BarbeariaAlura"> baixar</a> o projeto no arquivo zip no repositório</p>
