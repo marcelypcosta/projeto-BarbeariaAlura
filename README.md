@@ -11,7 +11,9 @@
 
 <h3 id="descricao">Descrição do Projeto</h3>
 <hr>
-<p>Projeto oferecido para o aluno Alura com objetivo em conhecer principais pontos em HTML5.É uma página comercial na área da beleza masculina. Nela é possível encontrar tudo sobre o salão como o sobre, sua localização, os benefícios, vídeos demonstrativo do salão, seus produtos e contatos.</p>
+<p>Projeto oferecido para o aluno Alura com objetivo em conhecer principais pontos em HTML5 e CSS3.</p>
+<p>É uma página comercial na área da beleza masculina. Nela é possível encontrar tudo sobre o salão como o sobre, sua localização, os benefícios, vídeos demonstrativo do salão, seus produtos e contatos.</p>
+<p>Neste projeto aprendi: o que é o HTML e o CSS, a estrutura básica de um arquivo HTML, a utlizar o navegador para inspecionar elementos, a definir estilos para elementos usando o CSS, um pouco de reposividade e a desenvolver um página Web</p>
 
 <h3 id="linguagens">Linguagens utilizadas</h3>
 <hr>
